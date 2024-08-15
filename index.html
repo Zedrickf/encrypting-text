@@ -2,10 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encrypting Text</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+
+    <div class="encrypt">
+
+        <header class="encrypt__header">
+            <nav class="encrypt__nav">
+                <div class="encrypt__nav-div">
+                    <img class="encrypt__nav-img" src="Logo-green.png" alt="alura logotype">
+                </div>
+            </nav>
+        </header>
+
+        <main class="encrypt__main">
+            
+            <section class="encrypt__text-buttons">
+                
+                <div class="encrypt__textarea">
+                    <label for="encrypt-area">Add the text you want to encrypt down here</label>
+                    <textarea name="encrypt-area" id="encrypt-text" cols="35" rows="30" placeholder="To encrypt write here"></textarea>
+                </div>
+                
+                <div class="encrypt__buttons">
+                    <button type="button">Encrypt</button>
+                    <button type="button">Unscramble</button>
+                </div>
+
+            </section>
+
+            <aside class="encrypt__aside">
+                <textarea name="unscramble-area" id="unscramble-text" cols="35" rows="30" readonly=""></textarea>
+                <button class="encrypt__copy" type="button">Copy Text</button>
+            </aside>
+
+        </main>
+
+        <footer class="encrypt__footer">
+            <h2 class="encrypt__tittle"> 2024 Anthony Marin</h2>
+            <ul class="encrypt__list">
+                <li class="encrypt__elemnt">GitHub</li>
+                <li class="encrypt__elemnt">Linkedin</li>
+                <li class="encrypt__elemnt">Twitter</li>
+            </ul>
+        </footer>
+
+    </div>
+
 </body>
+
 </html>
