@@ -10,13 +10,14 @@
 
 <body>
 
-    <div class="matrix-bg"></div>
     <div class="encrypt">
 
         <header class="encrypt__header">
             <nav class="encrypt__nav">
                 <div class="encrypt__nav-div">
-                    <img class="encrypt__nav-img" src="Logo-lightgreen.png.png" alt="alura logotype">
+                    <div class="encrypt__bg">
+                        <h1 class="encrypt__h1">T3xt//EnCrypTor</h1>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -25,9 +26,14 @@
             
             <section class="encrypt__text-buttons">
                 
+                <label class="encrypt__label" for="encrypt-area">Add the text you want to encrypt down here</label>
                 <div class="encrypt__textarea">
-                    <label for="encrypt-area">Add the text you want to encrypt down here</label>
                     <textarea name="encrypt-area" id="encrypt-text" cols="35" rows="30" placeholder="To encrypt write here"></textarea>
+
+                    <div class="txt-corner_t-l"></div>
+                    <div class="txt-corner_t-r"></div>
+                    <div class="txt-corner_b-l"></div>
+                    <div class="txt-corner_b-r"></div>
                 </div>
                 
                 <div class="encrypt__buttons">
@@ -38,7 +44,14 @@
             </section>
 
             <aside class="encrypt__aside">
-                <textarea name="unscramble-area" id="unscramble-text" cols="45" rows="40" readonly=""></textarea>
+                <div class="encrypt__conten-corner">
+                    <textarea name="unscramble-area" id="unscramble-text" cols="45" rows="40" readonly=""></textarea>
+
+                    <div class="encrypt__cornerst"></div>
+                    <div class="encrypt__cornersb"></div>
+                    <div class="encrypt__cornersl"></div>
+                    <div class="encrypt__cornersr"></div>
+                </div>
                 <button class="encrypt__copy" type="button">Copy Text</button>
             </aside>
             
