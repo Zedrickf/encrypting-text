@@ -28,31 +28,29 @@
                 
                 <label class="encrypt__label" for="encrypt-area">Add the text you want to encrypt down here</label>
                 <div class="encrypt__textarea">
-                    <textarea name="encrypt-area" id="encrypt-text" cols="35" rows="30" placeholder="To encrypt write here"></textarea>
-
-                    <div class="txt-corner_t-l"></div>
-                    <div class="txt-corner_t-r"></div>
-                    <div class="txt-corner_b-l"></div>
-                    <div class="txt-corner_b-r"></div>
+                    <textarea name="encrypt-area" id="encrypt-text" cols="20" rows="30" placeholder="To encrypt write here"></textarea>
+                    <div class="corners top"></div>
+				    <div class="corners bottom"></div>
                 </div>
                 
-                <div class="encrypt__buttons">
-                    <button type="button">Encrypt</button>
-                    <button type="button">Unscramble</button>
+                <div class="encrypt__container-buttons">
+                    <button class="encrypt__button" type="button">
+                        <span>Encrypt</span>
+                    </button>
+                    <button class="encrypt__button" type="button">
+                        <span>Unscramble</span>
+                    </button>
                 </div>
 
             </section>
 
             <aside class="encrypt__aside">
-                <div class="encrypt__conten-corner">
-                    <textarea name="unscramble-area" id="unscramble-text" cols="45" rows="40" readonly=""></textarea>
-
-                    <div class="encrypt__cornerst"></div>
-                    <div class="encrypt__cornersb"></div>
-                    <div class="encrypt__cornersl"></div>
-                    <div class="encrypt__cornersr"></div>
+                <div class="encrypt__conten-aside">
+                    <textarea name="unscramble-area" id="unscramble-text" cols="20" rows="30" readonly=""></textarea>
+                    <button class="encrypt__button button-place" type="button">
+                        <span>Copy Text</span>
+                    </button>
                 </div>
-                <button class="encrypt__copy" type="button">Copy Text</button>
             </aside>
             
 
@@ -61,9 +59,15 @@
         <footer class="encrypt__footer">
             <h2 class="encrypt__tittle"> 2024 Anthony Marin</h2>
             <ul class="encrypt__list">
-                <li class="encrypt__elemnt">GitHub</li>
-                <li class="encrypt__elemnt">Linkedin</li>
-                <li class="encrypt__elemnt">Twitter</li>
+                <li class="encrypt__elemnt">
+                    <a href="https://github.com/Zedrickf" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </li>
+                <li class="encrypt__elemnt">
+                    <a href="https://www.linkedin.com/in/anthony-marin-web-designer" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                </li>
+                <li class="encrypt__elemnt">
+                    <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
             </ul>
         </footer>
 
