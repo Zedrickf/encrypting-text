@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jersey+10&family=Jersey+15&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -39,6 +38,8 @@ body {
     gap: 55px;
 }
 
+
+
 /*----HEADER----*/
 .encrypt__header {
     width: 65%;
@@ -54,14 +55,14 @@ body {
 
 .encrypt__h1 {
     color: var(--lightgreen);
-    font-size: 2.5em;
+    font-size: 1.7em;
     font-family: var(--fontitle);
     font-weight: bold; 
-    padding: 2% 0 0 6%;
+    padding: 1.5rem 0 0 2rem;
     /* -webkit-text-stroke: 2px rgb(0, 0, 0); */
 }
-
 /*----HEADER----*/
+
 
 
 /*----MAIN-----*/
@@ -72,19 +73,26 @@ body {
     align-self: center;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 60px;
 }
 
 /*   text area   */
 .encrypt__text-buttons {
-    border: var(--borderstatus-r);
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
-    width: 550px;
+    flex: 1 1 45%;
+    align-items: center;
+}
+
+.encrypt__label {
+    font-size: 1.1em;
+    font-weight: 600;
+    font-family: var(--fontitle);
+    text-align: center;
 }
 
 .encrypt__textarea {
@@ -92,90 +100,123 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    position: relative;
-}
-
-.encrypt__label {
-    font-size: 1.4em;
-    font-weight: 600;
-    font-family: var(--fontitle);
-    text-align: center;
+    width: 75%;
 }
 
 #encrypt-text {
-    border: 1px solid var(--lighpurple);
-    background-color: var(--darkgreen);
-    padding: 30px 0 0 30px;
+    border: 1px dashed var(--lightgreen);
     color: var(--lightgreen);
-    font-size: large;
+    font-size: 1rem;
     font-family: var(--fontbody);
     resize: none;
+    outline: none;
+    --b: 2px; /* border thickness */
+    --c: #0000 25%, var(--lightgreen) 0; /* define the color here */
+    padding: 15px 0 0 20px;
+    background:
+    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
+    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
+    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
+    background-size: 50px 50px; /* adjust border length here */
+    background-repeat: no-repeat;
+    transition: all .6s;
 }
 
 #encrypt-text:focus {
-    border: 1.5px solid var(--lightgreen);
+    border: 1.5px dashed var(--lighpurple);
+    background-size: 51% 51%;
 }
 
-/* text area corners */
-.txt-corner_t-l {
-    border-right: 1px solid var(--lighpurple);
-    border-bottom: 1px solid var(--lighpurple); 
-    background-color: var(--mainpurple);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 5%;
-    height: 20px;
-}
-
-.txt-corner_t-r {
-    border-left: 1px solid var(--lighpurple);
-    border-bottom: 1px solid var(--lighpurple);
-    background-color: var(--mainpurple);
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 5%;
-    height: 20px;
-}
-
-.txt-corner_b-l {
-    border-top: 1px solid var(--lighpurple);
-    border-right: 1px solid var(--lighpurple);
-    background-color: var(--mainpurple);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 5%;
-    height: 20px;
-}
-
-.txt-corner_b-r {
-    border-top: 1px solid var(--lighpurple);
-    border-left: 1px solid var(--lighpurple);
-    background-color: var(--mainpurple);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 5%;
-    height: 20px;
-}
 
 /* text area buttons */
-.encrypt__buttons {
- border: var(--borderstatus-b);
- display: flex;
+.encrypt__container-buttons {
+ width: 100%;
+    display: flex;
  justify-content: center;
- gap: 10%;
+ gap: 15%;
 }
 
+.encrypt__button {
+  --btn-default-bg: #002000bb;
+  --btn-padding: 15px 20px;
+  --btn-hover-bg: #0e002da3;
+  --btn-transition: all .2s;
+  --btn-letter-spacing: .1rem;
+  --btn-animation-duration: 1.2s;
+  --btn-shadow-color: rgba(0, 0, 0, 0.137);
+  --hover-btn-color: #00FF41;
+  --default-btn-color: #00FF41;
+  --font-size: 16px;
+  --font-weight: 600;
+  --font-family: "Chakra Petch", sans-serif;
+}
+
+.encrypt__button {
+  box-sizing: border-box;
+  padding: var(--btn-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--default-btn-color);
+  font: var(--font-weight) var(--font-size) var(--font-family);
+  background: var(--btn-default-bg);
+  border: 2px solid;
+  cursor: pointer;
+  transition: var(--btn-transition);
+  overflow: hidden;
+}
+
+.encrypt__button span {
+  letter-spacing: var(--btn-letter-spacing);
+  transition: var(--btn-transition);
+  box-sizing: border-box;
+  position: relative;
+  background: inherit;
+}
+
+.encrypt__button span::before {
+  box-sizing: border-box;
+  position: absolute;
+  content: "";
+  background: inherit;
+}
+
+.encrypt__button:hover, .encrypt__button:focus {
+  background: var(--btn-hover-bg);
+}
+
+.encrypt__button:hover span, .encrypt__button:focus span {
+  color: var(--hover-btn-color);
+}
+
+.encrypt__button:active {
+    transform: translateY(5px);
+    background-color: var(--darkpurple);
+}
+
+.encrypt__button:hover span::before, .encrypt__button:focus span::before {
+  animation: chitchat linear both var(--btn-animation-duration) infinite;
+}
+
+
 /*   aside   */
-/* 
-
 .encrypt__aside {
-    border: var(--borderstatus-r);
-} */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    flex: 1 1 30%;
+} 
 
+.encrypt__conten-aside {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #unscramble-text {
     border: 1px solid var(--lightgreen);
@@ -183,67 +224,147 @@ body {
     background-image: url(matrix-bg.gif);
     background-size: cover;
     background-color: var(--darkpurple);
-    /*filter: blur(5px);  Aplicar el desenfoque */
     padding: 30px 0 0 30px;
     color: var(--lighpurple);
     font-size: large;
     font-family: var(--fontbody);
     resize: none;
+    transition: all .6s;
 }
 
 #unscramble-text:focus {
     border: 1.5px solid var(--lighpurple);
+    background-image: none;
 }
 
-.encrypt__conten-corner {
-    width: inherit;
-    height: inherit;
-    position: relative;
-}
-
-.encrypt__cornerst {
-    border-right: 1px solid var(--lightgreen);
-    border-bottom: 1px solid var(--lightgreen); 
-    background-color: var(--blackbg);
+.button-place {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 5%;
-    height: 20px;
+    right: 70px;
+    bottom: 30px;
 }
 
-.encrypt__cornersb {
-    border-top: 1px solid var(--lightgreen);
-    border-right: 1px solid var(--lightgreen);
-    background-color: var(--blackbg);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 5%;
-    height: 20px;
+
+/*   footer   */
+.encrypt__footer {
+    background: linear-gradient(to bottom, #6C00FF9C 5%, #0D0208F7 80%), url('matrix-banner.gif');
+    font-family: var(--fontbody);
+    padding: 1.6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
-.encrypt__cornersl {
-    border-left: 1px solid var(--lightgreen);
-    border-bottom: 1px solid var(--lightgreen);
-    background-color: var(--blackbg);
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 5%;
-    height: 20px;
+.encrypt__tittle {
+    font-family: var(--fontitle);
 }
 
-.encrypt__cornersr {
-    border-top: 1px solid var(--lightgreen);
-    border-left: 1px solid var(--lightgreen);
-    background-color: var(--blackbg);
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 5%;
-    height: 20px;
+.encrypt__list {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
 }
 
+.encrypt__list a {
+    color: var(--lightgreen);
+    font-weight: 600;
+}
 
 /*----MAIN----*/
+
+/* animation */
+@keyframes chitchat {
+    0% {
+      content: "#";
+    }
+  
+    5% {
+      content: ".";
+    }
+  
+    10% {
+      content: "^{";
+    }
+  
+    15% {
+      content: "-!";
+    }
+  
+    20% {
+      content: "#$_";
+    }
+  
+    25% {
+      content: "№:0";
+    }
+  
+    30% {
+      content: "#{+.";
+    }
+  
+    35% {
+      content: "@}-?";
+    }
+  
+    40% {
+      content: "?{4@%";
+    }
+  
+    45% {
+      content: "=.,^!";
+    }
+  
+    50% {
+      content: "?2@%";
+    }
+  
+    55% {
+      content: "\;1}]";
+    }
+  
+    60% {
+      content: "?{%:%";
+      right: 0;
+    }
+  
+    65% {
+      content: "|{f[4";
+      right: 0;
+    }
+  
+    70% {
+      content: "{4%0%";
+      right: 0;
+    }
+  
+    75% {
+      content: "'1_0<";
+      right: 0;
+    }
+  
+    80% {
+      content: "{0%";
+      right: 0;
+    }
+  
+    85% {
+      content: "]>'";
+      right: 0;
+    }
+  
+    90% {
+      content: "4";
+      right: 0;
+    }
+  
+    95% {
+      content: "2";
+      right: 0;
+    }
+  
+    100% {
+      content: "";
+      right: 0;
+    }
+  }
