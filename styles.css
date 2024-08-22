@@ -2,65 +2,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    font-family: "Chakra Petch", sans-serif;
-    box-sizing: border-box;
-    line-height: 1.15;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Chakra Petch", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.15;
+  outline: none;
 }
 
 :root {
-    --fontitle: "Electrolize", sans-serif;
-    --fontbody: "Chakra Petch", sans-serif;
-    --lightgreen: #00FF41;
-    --lightyellow: #ffd000;
-    --middlegreen: #008F11;
-    --darkgreen: #002000bb;
-    --blackbg: #0D0208;
-    --lighpurple: #6C00FF;
-    --darkpurple: #1e01489e;
-    --mainpurple: #0e002da3;
-    --borderstatus-r: 2px solid red;
-    --borderstatus-b: 2px solid blue;
+  --fontitle: "Electrolize", sans-serif;
+  --fontbody: "Chakra Petch", sans-serif;
+  --lightgreen: #00FF41;
+  --lightyellow: #ffd000;
+  --middlegreen: #008F11;
+  --darkgreen: #002000bb;
+  --blackbg: #0D0208;
+  --lighpurple: #6C00FF;
+  --darkpurple: #1e01489e;
+  --mainpurple: #0e002da3;
+  --borderstatus-r: 2px solid red;
+  --borderstatus-b: 2px solid blue;
 }
 
 body {
-    background-color: var(--blackbg);
-    height: 100%;
-    color: var(--lightgreen);
+  background-color: var(--blackbg);
+  height: 100%;
+  color: var(--lightgreen);
 }
 
 .encrypt {
-    display: flex;
-    flex-direction: column;
-    gap: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
 }
 
 
 
 /*----HEADER----*/
 .encrypt__header {
-    width: 65%;
+  width: 65%;
 }
 
 .encrypt__bg {
-    background: linear-gradient(to right, #6C00FF9C 5%, #0D0208F7 60%), url('matrix-banner.gif');
-    width: 100%;
-    height: 85px;
-    background-size: auto;
-    background-position: center;
+  background: linear-gradient(to right, #6C00FF9C 5%, #0D0208F7 60%), url('matrix-banner.gif');
+  width: 100%;
+  height: 85px;
+  background-size: auto;
+  background-position: center;
 }
 
 .encrypt__h1 {
-    color: var(--lightgreen);
-    font-size: 1.7em;
-    font-family: var(--fontitle);
-    font-weight: bold; 
-    padding: 1.5rem 0 0 2rem;
-    /* -webkit-text-stroke: 2px rgb(0, 0, 0); */
+  color: var(--lightgreen);
+  font-size: 1.7em;
+  font-family: var(--fontitle);
+  font-weight: bold; 
+  padding: 1.5rem 0 0 2rem;
+  /* -webkit-text-stroke: 2px rgb(0, 0, 0); */
 }
 /*----HEADER----*/
 
@@ -68,74 +68,74 @@ body {
 
 /*----MAIN-----*/
 .encrypt__main {
-    border: 1px solid var(--lighpurple);
-    background-color: var(--mainpurple);
-    width: 95%;
-    align-self: center;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 60px;
+  border: 1px solid var(--lighpurple);
+  background-color: var(--mainpurple);
+  width: 95%;
+  align-self: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 60px;
 }
 
 /*   text area   */
 .encrypt__text-buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-    flex: 1 1 45%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  flex: 1 1 45%;
+  align-items: center;
 }
 
 .encrypt__label {
-    font-size: 1.1em;
-    font-weight: 600;
-    font-family: var(--fontitle);
-    text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+  font-family: var(--fontitle);
+  text-align: center;
 }
 
 .encrypt__textarea {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 75%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 75%;
 }
 
 #encrypt-text {
-    border: 1px dashed var(--lightgreen);
-    color: var(--lightyellow);
-    font-size: 1rem;
-    font-family: var(--fontbody);
-    resize: none;
-    outline: none;
-    --b: 2px; 
-    --c: #0000 25%, var(--lightgreen) 0; 
-    padding: 15px 0 0 20px;
-    background:
-    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
-    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
-    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
-    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
-    background-size: 50px 50px; 
-    background-repeat: no-repeat;
-    transition: all .6s;
+  border: 1px dashed var(--lightgreen);
+  color: var(--lightyellow);
+  font-size: 1rem;
+  font-family: var(--fontbody);
+  resize: none;
+  outline: none;
+  --b: 2px; 
+  --c: #0000 25%, var(--lightgreen) 0; 
+  padding: 15px 0 0 20px;
+  background:
+  conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
+  conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
+  conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
+  conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
+  background-size: 50px 50px; 
+  background-repeat: no-repeat;
+  transition: all .6s;
 }
 
 #encrypt-text:focus {
-    border: 1px dashed var(--lighpurple);
-    background-size: 51% 51%;
+  border: 1px dashed var(--lighpurple);
+  background-size: 51% 51%;
 }
 
 
 /* text area buttons */
 .encrypt__container-buttons {
- width: 100%;
-    display: flex;
- justify-content: center;
- gap: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15%;
 }
 
 .encrypt__button {
@@ -192,8 +192,8 @@ body {
 }
 
 .encrypt__button:active {
-    transform: translateY(5px);
-    background-color: var(--darkpurple);
+  transform: translateY(5px);
+  background-color: var(--darkpurple);
 }
 
 .encrypt__button:hover span::before, .encrypt__button:focus span::before {
@@ -203,244 +203,321 @@ body {
 
 /*   aside   */
 .encrypt__aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
-    flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  flex: 1 1 30%;
 } 
 
 .encrypt__conten-aside {
-    width: inherit;
-    height: inherit;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
+  width: inherit;
+  height: inherit;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 
 #encrypt__bg-img {
-  position: absolute;
-  height: 650px;
+position: absolute;
+height: 650px;
 }
 
 #unscramble-text {
-    border: 1px dashed var(--lightgreen);
-    position: relative;
-    background-image: url(matrix-bg.gif);
-    background-size: cover;
-    background-color: var(--darkpurple);
-    padding: 15px 0 0 20px;
-    color: var(--lighpurple);
-    font-size: large;
-    font-family: var(--fontbody);
-    resize: none;
-    outline: none;
-    --b: 2px; 
-    --c: #0000 25%, var(--lightgreen) 0; 
-    padding: 15px 0 0 20px;
-    background:
-    conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
-    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
-    conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
-    conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
-    background-size: 50px 50px; 
-    background-repeat: no-repeat;
-    transition: all .6s;
+  border: 1px dashed var(--lightgreen);
+  position: relative;
+  background-image: url(matrix-bg.gif);
+  background-size: cover;
+  background-color: var(--darkpurple);
+  padding: 15px 0 0 20px;
+  color: var(--lightyellow);
+  font-size: large;
+  font-family: var(--fontbody);
+  resize: none;
+  outline: none;
+  --b: 2px; 
+  --c: #0000 25%, var(--lightgreen) 0; 
+  padding: 15px 0 0 20px;
+  background:
+  conic-gradient(from 90deg  at top    var(--b) left  var(--b),var(--c)) 0    0,
+  conic-gradient(from 180deg at top    var(--b) right var(--b),var(--c)) 100% 0,
+  conic-gradient(from 0deg   at bottom var(--b) left  var(--b),var(--c)) 0    100%,
+  conic-gradient(from -90deg at bottom var(--b) right var(--b),var(--c)) 100% 100%;
+  background-size: 50px 50px; 
+  background-repeat: no-repeat;
+  transition: all .6s;
 }
 
 #unscramble-text:hover {
-    border: 1px dashed var(--lighpurple);
-    background-size: 51% 51%;
+  border: 1px dashed var(--lighpurple);
+  background-size: 51% 51%;
 }
 
 #button-place {
-    position: absolute;
-    right: 95px;
-    bottom: 30px;
-    display: block;
+  position: absolute;
+  right: 95px;
+  bottom: 30px;
+  display: block;
 }
 
 
 /*   footer   */
 .encrypt__footer {
-    background: linear-gradient(to bottom, #6C00FF9C 5%, #0D0208F7 80%), url('matrix-banner.gif');
-    font-family: var(--fontbody);
-    padding: 1.6rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  background: linear-gradient(to bottom, #6C00FF9C 5%, #0D0208F7 80%), url('matrix-banner.gif');
+  font-family: var(--fontbody);
+  padding: 1.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .encrypt__tittle {
-    font-family: var(--fontitle);
+  font-family: var(--fontitle);
 }
 
 .encrypt__list {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .encrypt__list a {
-    color: var(--lightgreen);
-    font-weight: 600;
+  color: var(--lightgreen);
+  font-weight: 600;
 }
 
 /*----MAIN----*/
 
+/*----ALERT SMS----*/
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+  background-color: var(--blackbg);
+  margin: 15% auto;
+  padding: 25px;
+  border: 1px solid var(--lightyellow);
+  width: 85%;
+  max-width: 300px;
+  text-align: center;
+  animation: fadeIn 0.3s;
+}
+
+.modal-contentG {
+  background-color: #110029;
+  border: 1px solid var(--lightgreen);
+}
+
+.close {
+  color: var(--lightyellow);
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.closeG {
+  color: var(--lightgreen);
+}
+
+.closeG:hover,
+.closeG:focus {
+  color: var(--lightyellow);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#alertMessage {
+  color: red;
+  font-size: 19px;
+}
+
+#customMesage {
+  color: var(--lightgreen);
+  font-size: 19px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/*----ALERT SMS----*/
+
+
 /* animation */
 @keyframes chitchat {
-    0% {
-      content: "#";
-    }
-  
-    5% {
-      content: ".";
-    }
-  
-    10% {
-      content: "^{";
-    }
-  
-    15% {
-      content: "-!";
-    }
-  
-    20% {
-      content: "#$_";
-    }
-  
-    25% {
-      content: "№:0";
-    }
-  
-    30% {
-      content: "#{+.";
-    }
-  
-    35% {
-      content: "@}-?";
-    }
-  
-    40% {
-      content: "?{4@%";
-    }
-  
-    45% {
-      content: "=.,^!";
-    }
-  
-    50% {
-      content: "?2@%";
-    }
-  
-    55% {
-      content: "\;1}]";
-    }
-  
-    60% {
-      content: "?{%:%";
-      right: 0;
-    }
-  
-    65% {
-      content: "|{f[4";
-      right: 0;
-    }
-  
-    70% {
-      content: "{4%0%";
-      right: 0;
-    }
-  
-    75% {
-      content: "'1_0<";
-      right: 0;
-    }
-  
-    80% {
-      content: "{0%";
-      right: 0;
-    }
-  
-    85% {
-      content: "]>'";
-      right: 0;
-    }
-  
-    90% {
-      content: "4";
-      right: 0;
-    }
-  
-    95% {
-      content: "2";
-      right: 0;
-    }
-  
-    100% {
-      content: "";
-      right: 0;
-    }
+  0% {
+    content: "#";
   }
 
-
-  @media(max-width: 768px) {
-
-    .encrypt__text-buttons {
-      flex: 1 1 63%;
-    }
-
-    .encrypt__textarea {
-      width: 55%;
-    }
-
-    .encrypt__button {
-      font-size: 10px;
-      padding: 7px 15px;
-    }
-
-    #unscramble-text {
-      height: 9em;
-    }
-
-    #button-place {
-      right: 115px;
-      bottom: 20px;
-    }
-
-    #encrypt__bg-img {
-      height: 210px;
-    }
-
+  5% {
+    content: ".";
   }
 
-  @media(max-width: 450px) {
-    
-    .encrypt__textarea {
-      width: 85%;
-    }
+  10% {
+    content: "^{";
+  }
 
-    #encrypt-text {
-      height: 20em;
-    }
+  15% {
+    content: "-!";
+  }
 
-    #unscramble-text {
-      height: 8em;
-    }
+  20% {
+    content: "#$_";
+  }
 
-    .encrypt__button {
-      font-size: 10px;
-      padding: 7px 12px;
-    }
+  25% {
+    content: "№:0";
+  }
 
-    #button-place {
-      right: 115px;
-    }
+  30% {
+    content: "#{+.";
+  }
+
+  35% {
+    content: "@}-?";
+  }
+
+  40% {
+    content: "?{4@%";
+  }
+
+  45% {
+    content: "=.,^!";
+  }
+
+  50% {
+    content: "?2@%";
+  }
+
+  55% {
+    content: "\;1}]";
+  }
+
+  60% {
+    content: "?{%:%";
+    right: 0;
+  }
+
+  65% {
+    content: "|{f[4";
+    right: 0;
+  }
+
+  70% {
+    content: "{4%0%";
+    right: 0;
+  }
+
+  75% {
+    content: "'1_0<";
+    right: 0;
+  }
+
+  80% {
+    content: "{0%";
+    right: 0;
+  }
+
+  85% {
+    content: "]>'";
+    right: 0;
+  }
+
+  90% {
+    content: "4";
+    right: 0;
+  }
+
+  95% {
+    content: "2";
+    right: 0;
+  }
+
+  100% {
+    content: "";
+    right: 0;
+  }
+}
+
+
+@media(max-width: 768px) {
+
+  .encrypt__text-buttons {
+    flex: 1 1 63%;
+  }
+
+  .encrypt__textarea {
+    width: 55%;
+  }
+
+  .encrypt__button {
+    font-size: 10px;
+    padding: 7px 15px;
+  }
+
+  #unscramble-text {
+    height: 9em;
+  }
+
+  #button-place {
+    bottom: 20px;
+  }
+
+  #encrypt__bg-img {
+    height: 210px;
+  }
+
+  .encrypt__footer {
+    font-size: 0.7rem;
+    padding: 1rem 0.5rem;
+  }
+
+}
+
+@media(max-width: 450px) {
   
+  .encrypt__textarea {
+    width: 85%;
   }
+
+  #encrypt-text {
+    height: 20em;
+  }
+
+  #unscramble-text {
+    height: 8em;
+  }
+
+  .encrypt__button {
+    font-size: 10px;
+    padding: 7px 12px;
+  }
+
+  .encrypt__footer {
+    font-size: 0.6rem;
+    padding: 1rem 0.5rem;
+  }
+  
+}

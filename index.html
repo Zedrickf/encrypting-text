@@ -37,7 +37,7 @@
                     <button class="encrypt__button" type="button" onclick="encryptText()">
                         <span>Encrypt</span>
                     </button>
-                    <button class="encrypt__button" type="button">
+                    <button class="encrypt__button" type="button" onclick="decryptText()">
                         <span>Unscramble</span>
                     </button>
                 </div>
@@ -53,7 +53,22 @@
                     </button>
                 </div>
             </aside>
-            
+
+            <!-- yellow/red alert message -->
+            <div id="customAlert" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="alertMessage"></p>
+                </div>
+            </div>
+
+            <!-- green alert message -->
+            <div id="customMesage" class="modal modelG">
+                <div class="modal-content modal-contentG">
+                    <span class="close closeG">&times;</span>
+                    <p id="sucessMessage"></p>
+                </div>
+            </div>         
 
         </main>
 
