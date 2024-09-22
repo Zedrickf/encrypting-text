@@ -464,6 +464,10 @@ height: 650px;
 
 @media(max-width: 768px) {
 
+  #encrypt-text {
+    height: 10em;
+  }
+  
   .encrypt__text-buttons {
     flex: 1 1 63%;
   }
